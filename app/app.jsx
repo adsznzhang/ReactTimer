@@ -13,11 +13,11 @@ $(document).foundation();
 require('style!css!sass!applicationStyles');
 
 ReactDOM.render(
-        <Router history={hashHistory}>
-        <Route path="/" component={Main}>
-        <Route path="Countdown" component={Countdown} />
-        <IndexRoute component={Timer} />
-        </Route>
-        </Router>,
+  <Router history={hashHistory}>
+    <Route path="/" component={Main}>
+      <Route path="Countdown" component={Countdown} />
+      <IndexRoute component={Timer} />
+    </Route>
+  </Router>,
     document.getElementById('app')
 );
